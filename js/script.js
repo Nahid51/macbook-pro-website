@@ -4,13 +4,11 @@ const btn16GB = document.getElementById('btn-16gb');
 const memoryCost = document.getElementById('memory-cost');
 btn8GB.addEventListener('click', function () {
     memoryCost.innerText = '0';
-    totalProductPrice();
-
+    totalProductPrice();finalProductPrice();
 })
 btn16GB.addEventListener('click', function () {
     memoryCost.innerText = '180';
-    totalProductPrice();
-
+    totalProductPrice();finalProductPrice();
 })
 
 // storage cost
@@ -20,16 +18,15 @@ const storage1TB = document.getElementById('storage-1tb');
 const storageCost = document.getElementById('storage-cost');
 storage256GB.addEventListener('click', function () {
     storageCost.innerText = '0';
-    totalProductPrice();
-
+    totalProductPrice();finalProductPrice();
 })
 storage512GB.addEventListener('click', function () {
     storageCost.innerText = '100';
-    totalProductPrice();
+    totalProductPrice();finalProductPrice();
 })
 storage1TB.addEventListener('click', function () {
     storageCost.innerText = '180';
-    totalProductPrice();
+    totalProductPrice();finalProductPrice();
 })
 
 // delivery charge cost
@@ -38,17 +35,16 @@ const chargableDelivery = document.getElementById('chargable-delivery');
 const deliveryCharge = document.getElementById('delivery-charge');
 freeDelivery.addEventListener('click', function () {
     deliveryCharge.innerText = '0';
-    totalProductPrice();
+    totalProductPrice();finalProductPrice();
 })
 chargableDelivery.addEventListener('click', function () {
     deliveryCharge.innerText = '20';
-    totalProductPrice();
+    totalProductPrice();finalProductPrice();
 })
 
 // total price
 const bestPriceText = document.getElementById('best-price');
 const totalPriceText = document.getElementById('total-price');
-
 function totalProductPrice() {
     const bestPrice = parseInt(bestPriceText.innerText);
     const totalMemoryCost = parseInt(memoryCost.innerText);
@@ -58,10 +54,8 @@ function totalProductPrice() {
     totalPriceText.innerText = totalPrice;
 }
 
-
 // final price
 const finalTotalText = document.getElementById('total');
-
 function finalProductPrice() {
     const bestPrice = parseInt(bestPriceText.innerText);
     const totalMemoryCost = parseInt(memoryCost.innerText);
@@ -81,3 +75,4 @@ codeVarify.addEventListener('click', function () {
         inputCode.value = '';
     }
 })
+
