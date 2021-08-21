@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mac Book Pro!</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
+
 <body>
     <main>
         <section class="container mt-5">
             <div class="row row-cols-1 row-cols-md-2">
+                <!-- iMac image showing -->
                 <div class="col">
                     <div class="card border-0">
                         <img src="images/mac.png" class="card-img-top" alt="Mac Book Pro">
@@ -20,8 +21,12 @@
                 <div class="col">
                     <div class="card border-0">
                         <div class="card-body">
+                            <!-- about iMac -->
                             <h1 class="card-title">Customize your Blue 24-inch iMac with Apple M1 chip.</h1>
-                            <p class="card-text">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 26-core Netural Engine 8GB unified memory 256GB SSD storage Two Thunderbold / USB 4 ports Magic Mouse Magic Keyboard - US English.</p>
+                            <p class="card-text">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency
+                                cores, 7-core GPU, and 26-core Netural Engine 8GB unified memory 256GB SSD storage Two
+                                Thunderbold / USB 4 ports Magic Mouse Magic Keyboard - US English.</p>
+                            <!-- about memory cost -->
                             <div class="my-5">
                                 <h5>Memory</h5>
                                 <button type="button" id="btn-8gb" class="btn btn-outline-secondary">8GB unified
@@ -29,6 +34,7 @@
                                 <button type="button" id="btn-16gb" class="btn btn-outline-secondary">16GB unified
                                     memory</button>
                             </div>
+                            <!-- about storage cost -->
                             <div>
                                 <h5>Storage</h5>
                                 <button type="button" id="storage-256gb" class="btn btn-outline-secondary">258GB SSD
@@ -38,6 +44,7 @@
                                 <button type="button" id="storage-1tb" class="btn btn-outline-secondary">1TB SSD
                                     storage</button>
                             </div>
+                            <!-- about delivery cost -->
                             <div class="my-5">
                                 <h5>Choose your delivery option</h5>
                                 <button type="button" id="free-delivery" class="btn btn-outline-secondary">Friday, Aug
@@ -45,6 +52,7 @@
                                 <button type="button" id="chargable-delivery" class="btn btn-outline-secondary">Friday,
                                     Aug 21 Delivery charge $20</button>
                             </div>
+                            <!-- all calculation table -->
                             <div class="col-6">
                                 <table class="table fw-bold">
                                     <tbody>
@@ -71,6 +79,7 @@
                                     </tfoot>
                                 </table>
                             </div>
+                            <!-- add promo code  -->
                             <div class="col-6 mt-5">
                                 <h5>Add Promo code</h5>
                                 <div class="input-group mb-3">
@@ -84,6 +93,7 @@
                 </div>
             </div>
         </section>
+        <!-- calculate final price -->
         <footer class="container mb-5">
             <hr>
             <h1 class="text-center">Total: $<span id="total">1299</span></h1>
@@ -91,4 +101,5 @@
     </main>
     <script src="js/script.js"></script>
 </body>
+
 </html>

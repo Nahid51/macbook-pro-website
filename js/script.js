@@ -1,48 +1,41 @@
-// memory cost
-const btn8GB = document.getElementById('btn-8gb');
-const btn16GB = document.getElementById('btn-16gb');
+// calculate memory cost
 const memoryCost = document.getElementById('memory-cost');
-btn8GB.addEventListener('click', function () {
+document.getElementById('btn-8gb').addEventListener('click', function () {
     memoryCost.innerText = '0';
     totalProductPrice();finalProductPrice();
 })
-btn16GB.addEventListener('click', function () {
+document.getElementById('btn-16gb').addEventListener('click', function () {
     memoryCost.innerText = '180';
     totalProductPrice();finalProductPrice();
 })
 
-// storage cost
-const storage256GB = document.getElementById('storage-256gb');
-const storage512GB = document.getElementById('storage-512gb');
-const storage1TB = document.getElementById('storage-1tb');
+// calculate storage cost
 const storageCost = document.getElementById('storage-cost');
-storage256GB.addEventListener('click', function () {
+document.getElementById('storage-256gb').addEventListener('click', function () {
     storageCost.innerText = '0';
     totalProductPrice();finalProductPrice();
 })
-storage512GB.addEventListener('click', function () {
+document.getElementById('storage-512gb').addEventListener('click', function () {
     storageCost.innerText = '100';
     totalProductPrice();finalProductPrice();
 })
-storage1TB.addEventListener('click', function () {
+document.getElementById('storage-1tb').addEventListener('click', function () {
     storageCost.innerText = '180';
     totalProductPrice();finalProductPrice();
 })
 
-// delivery charge cost
-const freeDelivery = document.getElementById('free-delivery');
-const chargableDelivery = document.getElementById('chargable-delivery');
+// calculate delivery charge cost
 const deliveryCharge = document.getElementById('delivery-charge');
-freeDelivery.addEventListener('click', function () {
+document.getElementById('free-delivery').addEventListener('click', function () {
     deliveryCharge.innerText = '0';
     totalProductPrice();finalProductPrice();
 })
-chargableDelivery.addEventListener('click', function () {
+document.getElementById('chargable-delivery').addEventListener('click', function () {
     deliveryCharge.innerText = '20';
     totalProductPrice();finalProductPrice();
 })
 
-// total price
+// calculate total price
 const bestPriceText = document.getElementById('best-price');
 const totalPriceText = document.getElementById('total-price');
 function totalProductPrice() {
@@ -54,7 +47,7 @@ function totalProductPrice() {
     totalPriceText.innerText = totalPrice;
 }
 
-// final price
+// calculate final price
 const finalTotalText = document.getElementById('total');
 function finalProductPrice() {
     const bestPrice = parseInt(bestPriceText.innerText);
@@ -75,4 +68,3 @@ codeVarify.addEventListener('click', function () {
         inputCode.value = '';
     }
 })
-
