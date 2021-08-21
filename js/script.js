@@ -58,9 +58,9 @@ function finalProductPrice() {
     finalTotalText.innerText = finalPrice;
     return finalPrice;
 }
+
 // add promo code
-const codeVarify = document.getElementById('code-varify');
-codeVarify.addEventListener('click', function () {
+document.getElementById('code-varify').addEventListener('click', function () {
     const inputCode = document.getElementById('input-code');
     if (inputCode.value == 'stevekaku') {
         const final = finalProductPrice() - (finalProductPrice() * 0.2);
